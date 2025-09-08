@@ -16,7 +16,7 @@ def test_fermat(N, k=5):
     if N <= 1:
         return False
     for _ in range(k):
-        a = random.randint(2, N - 2)
+        a = random.randint(2, N - 1)
         if exp_modulaire(a, N - 1, N) != 1:
             return False
     return True
