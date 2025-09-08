@@ -11,7 +11,7 @@ def exp_modulaire(a, b, n):
         b //= 2
     return result
 
-# --- Test de Fermat ---
+# --- Fermat ---
 def test_fermat(N, k=5):
     if N <= 1:
         return False
@@ -21,7 +21,7 @@ def test_fermat(N, k=5):
             return False
     return True
 
-# --- Tirage d'un grand nombre premier ---
+# --- Tirage grand nombre premier ---
 def tirer_premier(min_val=10**6, max_val=10**9):
     while True:
         N = random.randint(min_val, max_val)
